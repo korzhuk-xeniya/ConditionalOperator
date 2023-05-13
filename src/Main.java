@@ -80,6 +80,21 @@ public class Main {
     }
     public static void task6 () {
         System.out.println("Задача 6");
+        int wagonCapacity = 102;
+        int people = 0;
+        int seat = 60;
+        int standingPlaces = wagonCapacity - seat;
+        boolean noSeat = people >= seat && people < wagonCapacity;
+        boolean thereAreSeat = people < seat;
+        if (thereAreSeat) {
+            System.out.println("В вагоне " + (seat - people) + " сидячих мест и  " + standingPlaces + " стячих мест");
+        } else {
+            if (noSeat) {
+                System.out.println("В вагоне нет сидячих мест и есть " + (wagonCapacity - people) + " стячих мест");
+            } else {
+                System.out.println("В вагоне нет свободных мест");
+            }
+        }
     }
     public static void task7 () {
         System.out.println("Задача 7");
