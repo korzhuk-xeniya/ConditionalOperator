@@ -7,7 +7,6 @@ public class Main {
         task5 ();
         task6 ();
         task7 ();
-        task8 ();
 
     }
     public static void task1 () {
@@ -98,8 +97,24 @@ public class Main {
     }
     public static void task7 () {
         System.out.println("Задача 7");
-    }
-    public static void task8 () {
-        System.out.println("Задача 8");
+        int one = 500;
+        int two = 90;
+        int three = 526;
+        boolean oneIsLargest = one > two && one > three;
+        boolean twoIsLargest = two > one && two > three;
+        boolean threeIsLargest = three > one && three > two;
+        if (oneIsLargest) {
+            System.out.println("Наибольшее число: one = " + one);
+        } else {
+            if (twoIsLargest) {
+                System.out.println("Наибольшее число: two = " + two);
+            } else {
+                if (threeIsLargest) {
+                    System.out.println("Наибольшее число: three = " + three);
+                } else {
+                    System.out.println("Нет одного наибольшего числа");
+                }
+            }
+        }
     }
 }
