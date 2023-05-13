@@ -38,8 +38,30 @@ public class Main {
         }
 
     }
-        public static void task4 () {
+    public static void task4 () {
         System.out.println("Задача 4");
+        int age = 61;
+        if ( age < 2) {
+            System.out.println("Если возраст человека равен " + age + " то ему пора спать");
+        } else {
+            if (age <= 6) {
+                System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в детский сад");
+            } else {
+                if (age <= 18) {
+                    System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в школу");
+                } else {
+                    if (age < 24) {
+                        System.out.println("Если возраст человека равен " + age + " то ему нужно ходить в университет");
+                    } else {
+                        if (age < 60) {
+                            System.out.println("Если возраст человека равен " + age + " то ему нужно ходить на работу");
+                        } else {
+                            System.out.println("Если возраст человека равен " + age + " то ему можно отдохнуть");
+                        }
+                    }
+                }
+            }
+        }
     }
     public static void task5 () {
         System.out.println("Задача 5");
