@@ -30,6 +30,13 @@ public class Main {
     }
     public static void task3 () {
         System.out.println("Задача 3");
+        float velocity = 59.9f;
+        if ( velocity > 60) {
+            System.out.println("Если скорость " + velocity + " км/ч, то придется платить штраф");
+        } else {
+            System.out.println("Если скорость " + velocity + " км/ч, то можно ездить спокойно");
+        }
+
     }
         public static void task4 () {
         System.out.println("Задача 4");
